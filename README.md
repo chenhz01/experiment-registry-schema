@@ -2,6 +2,8 @@
 
 A stdlib-only validator for A/B experiment registries: experiment declaration schema (hypothesis, owner, surface, dates, traffic, variants, status) plus same-surface overlap and traffic-oversubscription conflict detection. If more than one team runs experiments on shared surfaces, use this in CI; otherwise skip it.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 Experiment registries rot in spreadsheets. Two teams launch on the same checkout surface with 60% traffic each, variants lack a control, hypotheses are one word, and nobody notices until results are uninterpretable. The registry needs a mechanical gate that runs before experiments go live, offline, without a platform.
